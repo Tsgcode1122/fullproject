@@ -10,9 +10,11 @@ const usersRoute = require("./routes/usersRoute");
 const bookingsRoute = require("./routes/bookingsRoute");
 app.use(express.json());
 app.use(cors());
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use("/api/rooms", roomsRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/bookings", bookingsRoute);
 const port = process.env.PORT || 5001;
 
 app.listen(port, () => console.log(`Node Server Started using ${port}`));
+module.exports = app;

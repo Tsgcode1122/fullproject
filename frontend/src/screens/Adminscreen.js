@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import { Divider, Flex, Tag } from "antd";
 import Room from "../components/Room";
 import Admin from "../components/Admin";
+
 const { TabPane } = Tabs;
 
 const Adminscreen = () => {
